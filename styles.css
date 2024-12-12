@@ -1,0 +1,85 @@
+
+.btn-choice {
+    width: 120px;
+    height: 120px;
+    font-size: 1.5rem;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-choice:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn-reiniciar {
+    transition: background-color 0.3s ease;
+}
+
+.btn-reiniciar:hover {
+    background-color: #f9a8d4; 
+}
+
+.result span {
+    font-weight: bold;
+}
+
+/* Colores personalizados para los mensajes de resultado */
+.win {
+    color: #4CAF50; 
+}
+
+.lose {
+    color: #F44336; 
+}
+
+.draw {
+    color: #607D8B; 
+}
+
+/* Media Queries desktop */
+@media (min-width: 1024px) {
+    .btn-choice {
+        width: 150px;
+        height: 150px;
+        font-size: 2rem;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    .result, .score {
+        font-size: 1.5rem;
+    }
+
+    .btn-reiniciar {
+        font-size: 1.25rem;
+        padding: 12px 24px;
+    }
+}
+
+/* Media Queries celulares */
+@media (max-width: 576px) {
+    .btn-choice {
+        width: 100px;
+        height: 100px;
+        font-size: 1.2rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .result, .score {
+        font-size: 1.25rem;
+    }
+
+    .btn-reiniciar {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, Papel o Tijera</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body class="bg-gradient-to-br from-pink-100 via-indigo-100 to-teal-100 min-h-screen flex items-center justify-center">
+
+    <div class="bg-white p-10 rounded-xl shadow-lg max-w-xl w-full">
+        <h1 class="text-4xl font-semibold text-gray-700 mb-6 text-center">Piedra, Papel o Tijera</h1>
+        <p class="text-lg text-gray-600 mb-8 text-center">Elige tu opción y juega contra la computadora</p>
+
+        <!-- Botones para elegir Piedra, Papel o Tijera -->
+        <div class="grid grid-cols-3 gap-6 mb-6">
+            <button id="piedra" class="btn-choice bg-pink-300 hover:bg-pink-400">
+                <i class="fas fa-hand-rock fa-3x"></i><br>Piedra
+            </button>
+            <button id="papel" class="btn-choice bg-indigo-300 hover:bg-indigo-400">
+                <i class="fas fa-hand-paper fa-3x"></i><br>Papel
+            </button>
+            <button id="tijera" class="btn-choice bg-teal-300 hover:bg-teal-400">
+                <i class="fas fa-hand-scissors fa-3x"></i><br>Tijera
+            </button>
+        </div>
+
+        <!-- Resultados del juego -->
+        <div class="result text-center">
+            <h2 class="text-xl font-semibold text-gray-700">Resultado: <span id="resultado" class="text-gray-500">Esperando...</span></h2>
+            <p id="resultadoExtra" class="mt-2 text-lg text-gray-600"></p>
+        </div>
+
+        <!-- Puntajes -->
+        <div class="score mt-6 text-center">
+            <h3 class="text-lg text-gray-700">Tu puntaje: <span id="puntajeUsuario" class="font-bold">0</span></h3>
+            <h3 class="text-lg text-gray-700">Puntaje de la Computadora: <span id="puntajeComputadora" class="font-bold">0</span></h3>
+        </div>
+
+        <!-- Contenedor para el botón de reiniciar centrado -->
+        <div class="flex justify-center mt-8">
+            <button id="reiniciar" class="btn-reiniciar bg-pink-400 hover:bg-pink-500 text-white py-2 px-8 rounded-lg font-semibold text-xl">
+                Reiniciar Juego
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script> 
+</body>
+</html>
